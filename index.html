@@ -8,18 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TRG-planner: Traversal Risk Graph-Based Path Planning in Unstructured Environments for Safe and Efficient Navigation</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHWSKHVRP0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
+    gtag('config', 'G-XHWSKHVRP0');
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -177,7 +173,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">TRG-planner</span> turns selfie videos from your phone into
+        <span class="dtrg">TRG-planner</span> turns selfie videos from your phone into
         free-viewpoint
         portraits.
       </h2>
@@ -186,7 +182,7 @@
 </section>
 
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -241,7 +237,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -252,31 +248,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Unstructured environments such as mountains, caves, construction sites, or disaster areas are challenging for autonomous navigation because of terrain irregularities. 
+            In particular, it is crucial to plan a path to avoid risky terrain and reach the goal quickly and safely. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this paper, we propose a method for safe and distance-efficient path planning, leveraging our proposed novel graph, Traversal Risk Graph (TRG) which represents geometric information of the terrain.
+            TRG nodes contain stability and reachability of the terrain, and edges represent traversal risk-weighted path candidates between the nodes. 
+            Additionally, TRG is constructed in a wavefront propagation manner and managed hierarchically, enabling real-time planning even in large-scale environments by modifying only the graph around the robot.
+            Lastly, we formulate a graph optimization problem on TRG that leads the robot to navigate to the goal position, prioritizing both safe and short paths. 
+            Our approach demonstrated superior safety, distance efficiency, and fast processing time compared to the conventional methods. 
+            It was also validated in several real-world experiments using a quadrupedal robot. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Notably, our proposed <span class="dtrg">TRG-planner</span> contributed as the planning module of an autonomous navigation framework for the DreamSTEP team, which won the Quadruped Robot Challenge at ICRA 2023.
           </p>
         </div>
       </div>
@@ -284,7 +268,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -292,13 +276,13 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -382,7 +366,7 @@
         <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            Using <span class="dtrg">Nerfies</span>, you can re-render a video from a novel
             viewpoint such as a stabilized camera by playing back the training deformations.
           </p>
         </div>
@@ -432,7 +416,7 @@
     <!--/ Concurrent Work. -->
 
   </div>
-</section>
+</section> -->
 
 
 <section class="section" id="BibTeX">
