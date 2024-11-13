@@ -181,7 +181,7 @@
 </section>
 
 
-<!-- <section class="hero is-light is-small">
+<section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -236,7 +236,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="section">
@@ -247,19 +247,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Unstructured environments such as mountains, caves, construction sites, or disaster areas are challenging for autonomous navigation because of terrain irregularities. 
+            Unstructured environments such as mountains, caves, construction sites, or disaster areas are challenging for autonomous navigation because of terrain irregularities.
             In particular, it is crucial to plan a path to avoid risky terrain and reach the goal quickly and safely. 
           </p>
           <p>
-            In this paper, we propose a method for safe and distance-efficient path planning, leveraging our proposed novel graph, Traversal Risk Graph (TRG) which represents geometric information of the terrain.
-            TRG nodes contain stability and reachability of the terrain, and edges represent traversal risk-weighted path candidates between the nodes. 
-            Additionally, TRG is constructed in a wavefront propagation manner and managed hierarchically, enabling real-time planning even in large-scale environments by modifying only the graph around the robot.
-            Lastly, we formulate a graph optimization problem on TRG that leads the robot to navigate to the goal position, prioritizing both safe and short paths. 
-            Our approach demonstrated superior safety, distance efficiency, and fast processing time compared to the conventional methods. 
+            In this paper, we propose a method for safe and distance-efficient path planning, leveraging Traversal Risk Graph~(TRG), a novel graph representation that takes into account geometric traversability of the terrain.
+            TRG nodes represent stability and reachability of the terrain, while edges represent relative traversal risk-weighted path candidates. 
+            Additionally, TRG is constructed in a wavefront propagation manner and managed hierarchically, enabling real-time planning even in large-scale environments.
+            Lastly, we formulate a graph optimization problem on TRG that leads the robot to navigate by prioritizing both safe and short paths. 
+            Our approach demonstrated superior safety, distance efficiency, and fast processing time compared to the conventional methods.
             It was also validated in several real-world experiments using a quadrupedal robot. 
           </p>
           <p>
-            Notably, our proposed <span class="dtrg">TRG-planner</span> contributed as the planning module of an autonomous navigation framework for the DreamSTEP team, which won the Quadruped Robot Challenge at ICRA 2023.
+            Notably, <span class="dtrg">TRG-planner</span> contributed as the global path planner of an autonomous navigation framework for the DreamSTEP team, which won the Quadruped Robot Challenge at ICRA 2023.
           </p>
         </div>
       </div>
