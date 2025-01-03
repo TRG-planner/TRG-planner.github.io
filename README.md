@@ -4,11 +4,11 @@ This is the repository that contains source code for the [TRG-planner website](h
 
 If you find TRG-planner useful for your work please cite:
 ```
-@article{lee2024trg-planner,
+@article{lee2025trg,
   author    = {Lee, Dongkyu and Nahrendra, I Made Aswin and Oh, Minho and Yu, Byeongho and Myung, Hyun},
-  title     = {TRG-planner: Traversal Risk Graph-Based Path Planning in Unstructured Environments for Safe and Efficient Navigation},
-  journal   = {under review},
-  year      = {2024},
+  title     = {{TRG-planner: Traversal risk graph-based path planning in unstructured environments for safe and efficient navigation}},
+  journal   = {IEEE Robot. Automat. Lett.},
+  year      = {2025},
 }
 ```
 
