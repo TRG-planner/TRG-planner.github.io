@@ -174,7 +174,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="80%">
-        <source src="./static/videos/Intro.mp4" type="video/mp4">
+        <source src="./static/videos/0_Teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         <span class="dtrg">TRG-planner</span> finds a safe and efficient path for ground-based robots in unstructured environments.
@@ -246,7 +246,7 @@
             Traversal risk graph (TRG) is generated using wavefront propagation, resulting in a faster initialization time.
           </p>
           <video id="initialization1" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/0_graph_init.mp4" type="video/mp4">
+            <source src="./static/videos/1_trg_init_wMap.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -260,7 +260,7 @@
             Traversal risk graph (TRG) can be initialized and expanded using vicinity sensor measurements without map.
           </p>
           <video id="initialization2" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/1_woMap.mp4" type="video/mp4">
+            <source src="./static/videos/2_trg_init_woMap.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -288,7 +288,7 @@
             TRG-planner generates an optimal global path based on safety strategies, considering both safety and distance efficiency.
           </p>
           <video id="initialization1" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/0_graph_init.mp4" type="video/mp4">
+            <source src="./static/videos/3_planning_wMap_x2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -302,7 +302,7 @@
             TRG-planner dynamically replans its path, allowing it to explore unknown environments and react to local obstacles.
           </p>
           <video id="initialization2" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/1_woMap.mp4" type="video/mp4">
+            <source src="./static/videos/4_planning_woMap_x4.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -477,11 +477,17 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{lee2025trg,
-      author    = {Lee, Dongkyu and Nahrendra, I Made Aswin and Oh, Minho and Yu, Byeongho and Myung, Hyun},
-      title     = {{TRG-planner: Traversal risk graph-based path planning in unstructured environments for safe and efficient navigation}},
-      journal   = {IEEE Robot. Automat. Lett.},
-      year      = {2025},
+    <pre><code>
+      @article{lee2025trg,
+        title     = {TRG-planner: Traversal risk graph-based path planning in unstructured environments for safe and efficient navigation},
+        author    = {Lee, Dongkyu and Nahrendra, I Made Aswin and Oh, Minho and Yu, Byeongho and Myung, Hyun},
+        journal   = {IEEE Robotics and Automation Letters},
+        volume    = {10},
+        number    = {2},
+        pages     = {1736--1743},
+        year      = {2025},
+        publisher = {IEEE}
+      }
     }</code></pre>
   </div>
 </section>
