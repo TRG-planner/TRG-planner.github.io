@@ -194,8 +194,8 @@
           <p>
             Unstructured environments such as mountains, caves, construction sites, or disaster areas are challenging for autonomous navigation because of terrain irregularities.
             In particular, it is crucial to plan a path to avoid risky terrain and reach the goal quickly and safely. 
-          </p>
-          <p>
+          <!-- </p>
+          <p> -->
             In this paper, we propose a method for safe and distance-efficient path planning, leveraging Traversal Risk Grap (TRG), a novel graph representation that takes into account geometric traversability of the terrain.
             TRG nodes represent stability and reachability of the terrain, while edges represent relative traversal risk-weighted path candidates. 
             Additionally, TRG is constructed in a wavefront propagation manner and managed hierarchically, enabling real-time planning even in large-scale environments.
@@ -203,10 +203,9 @@
             Our approach demonstrated superior safety, distance efficiency, and fast processing time compared to the conventional methods.
             It was also validated in several real-world experiments using a quadrupedal robot. 
           </p>
-          <p>
+          <!-- <p>
             Notably, <span class="dtrg">TRG-planner</span> contributed as the global path planner of an autonomous navigation framework for the DreamSTEP team, which won the Quadruped Robot Challenge at ICRA 2023.
-            <!-- <a href="https://www.icra2023.org/competitions" target="_blank">Quadruped Robot Challenge</a> -->
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -233,14 +232,14 @@
       <!-- Graph Initialization Title & Description -->
       <div class="column is-centered has-text-centered">
         <div class="content is-four-fifths">
-          <h2 class="title is-3">Graph Management</h2>
+          <h2 class="title is-3">Traversal Risk Graph</h2>
         </div>
       </div>
     </div>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <div class="content has-text-justified">
+        <div class="content">
           <h3 class="title is-4">TRG initialization with pre-defined map</h3>
           <video id="initialization1" autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/1_trg_init_wMap.mp4" type="video/mp4">
@@ -254,7 +253,7 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <div class="content has-text-justified">
+        <div class="content">
           <h3 class="title is-4">TRG expansion & update without pre-defined map</h3>
           <video id="initialization2" autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/2_trg_init_woMap.mp4" type="video/mp4">
@@ -282,7 +281,7 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <div class="content has-text-justified">
+        <div class="content">
           <h3 class="title is-4">Safety-aware global path planning</h3>
           <video id="initialization1" autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/3_planning_wMap_x2.mp4" type="video/mp4">
@@ -296,7 +295,7 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
-        <div class="content has-text-justified">
+        <div class="content">
           <h3 class="title is-4">Exploration & local path planning</h3>
           <video id="initialization2" autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/4_planning_woMap_x4.mp4" type="video/mp4">
@@ -324,8 +323,10 @@
 
     <div class="columns is-centered">
       <div class="column is-full">
-        <div class="content has-text-justified">
-          <h3 class="title is-4">Team DreamSTEP of KAIST won **1st place** in the <a href="https://quadruped-robot-challenges.notion.site/IEEE-RAS-Quadruped-Robot-Challenges-bdc4af35638c4036817c3212e602b0e3" class="external-link" target="_blank" rel="noopener noreferrer">ICRA 2023 Autonomous Quadrupedal Robot Challenge</a>! TRG-planner was used as the global path planner for Team DreamSTEP's robot and could navigate a safe path through challenging terrains in the competition!</h3>
+        <div class="content">
+          <p>
+            Team DreamSTEP of KAIST won **1st place** in the <a href="https://quadruped-robot-challenges.notion.site/IEEE-RAS-Quadruped-Robot-Challenges-bdc4af35638c4036817c3212e602b0e3" class="external-link" target="_blank" rel="noopener noreferrer">ICRA 2023 Autonomous Quadrupedal Robot Challenge</a>! TRG-planner was used as the global path planner for Team DreamSTEP's robot and could navigate a safe path through challenging terrains in the competition!
+          </p>
         </div>
       </div>
     </div>
