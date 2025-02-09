@@ -203,9 +203,9 @@
             Our approach demonstrated superior safety, distance efficiency, and fast processing time compared to the conventional methods.
             It was also validated in several real-world experiments using a quadrupedal robot. 
           </p>
-          <!-- <p>
+          <p>
             Notably, <span class="dtrg">TRG-planner</span> contributed as the global path planner of an autonomous navigation framework for the DreamSTEP team, which won the Quadruped Robot Challenge at ICRA 2023.
-          </p> -->
+          </p>
         </div>
       </div>
     </div>
@@ -239,10 +239,10 @@
       <!-- Two-column layout for videos -->
       <div class="column is-6 has-text-centered">
         <div class="content">
-          <h3 class="title is-4">Short and safe global path planning & autonomous navigation</h3>
+          <h3 class="title is-4">Short and safe global path planning</h3>
           <div class="publication-video">
             <iframe 
-              src="https://youtu.be/iz38NR76Td8" 
+              src="https://www.youtube.com/embed/iz38NR76Td8" 
               allow="accelerometer; autoplay; encrypted-media;" allowfullscreen>
             </iframe>
           </div>
@@ -251,10 +251,50 @@
 
       <div class="column is-6 has-text-centered">
         <div class="content">
-          <h3 class="title is-4">Autonomous mapless navigation reacting to dynamic obstacles</h3>
+          <h3 class="title is-4">Autonomous mapless navigation</h3>
           <div class="publication-video">
             <iframe 
-              src="https://youtu.be/BMex6Q7_ziE" 
+              src="https://www.youtube.com/embed/BMex6Q7_ziE"
+              allow="accelerometer; autoplay; encrypted-media;" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered is-multiline">
+      
+      <!-- Graph Initialization Title & Description -->
+      <div class="column is-12 has-text-centered">
+        <div class="content is-four-fifths">
+          <h2 class="title is-3">Simulation experiments</h2>
+        </div>
+      </div>
+
+      <!-- Two-column layout for videos -->
+      <div class="column is-6 has-text-centered">
+        <div class="content">
+          <h3 class="title is-4">Graph initialization</h3>
+          <div class="publication-video">
+            <iframe 
+              src="https://www.youtube.com/embed/cB02ny236zg" 
+              allow="accelerometer; autoplay; encrypted-media;" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-6 has-text-centered">
+        <div class="content">
+          <h3 class="title is-4">Graph expansion & update</h3>
+          <div class="publication-video">
+            <iframe 
+              src="https://www.youtube.com/embed/Ub0hUYjKUsk"
               allow="accelerometer; autoplay; encrypted-media;" allowfullscreen>
             </iframe>
           </div>
@@ -266,89 +306,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      
-      <!-- Graph Initialization Title & Description -->
-      <div class="column is-centered has-text-centered">
-        <div class="content is-four-fifths">
-          <h2 class="title is-3">Traversal Risk Graph</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h3 class="title is-4">Initialization with pre-defined map</h3>
-          <video id="initialization1" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/1_trg_init_wMap.mp4" type="video/mp4">
-          </video>
-          <p>
-            Traversal risk graph (TRG) is generated using wavefront propagation, resulting in a faster initialization time.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h3 class="title is-4">Expansion & update without pre-defined map</h3>
-          <video id="initialization2" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/2_trg_init_woMap.mp4" type="video/mp4">
-          </video>
-          <p>
-            Traversal risk graph (TRG) can be initialized and expanded using vicinity sensor measurements without map.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      
-      <!-- Graph Initialization Title & Description -->
-      <div class="column is-centered has-text-centered">
-        <div class="content is-four-fifths">
-          <h2 class="title is-3">Path Planning with TRG</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h3 class="title is-4">Safety-aware global path planning</h3>
-          <video id="planning1" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/3_planning_wMap_x2.mp4" type="video/mp4">
-          </video>
-          <p>
-            TRG-planner generates an optimal global path based on safety strategies, considering both safety and distance efficiency.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <div class="content">
-          <h3 class="title is-4">Exploration & local path planning</h3>
-          <video id="planning2" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/4_planning_woMap_x4.mp4" type="video/mp4">
-          </video>
-          <p>
-            TRG-planner dynamically replans its path, allowing it to explore unknown environments and react to local obstacles.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
